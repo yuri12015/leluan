@@ -62,7 +62,7 @@
 	<link rel="stylesheet" href="<?php echo $ztTools->templateurl(); ?>css/ie7.css" type="text/css" />
 	<![endif]-->
 </head>
-<body id="bd" class="fs<?php echo $ztTools->getParam('zt_font'); ?> <?php echo $ztTools->getParam('zt_display'); ?> <?php echo $ztTools->getParam('zt_display_style'); ?> <?php echo $ztrtl; ?>  <?php echo $ztTools->getParamsValue($prefix, 'image', 'bd');?>">
+<body id="bd" class="fs<?php echo $ztTools->getParam('zt_font'); ?> <?php echo $ztTools->getParam('zt_display'); ?> <?php echo $ztTools->getParam('zt_display_style'); ?> <?php echo $ztrtl; ?>  <?php //echo $ztTools->getParamsValue($prefix, 'image', 'bd');?>">
 <div id="zt-wrapper">
 	<div id="zt-wrapper-inner" class="clearfix">
 		<!-- HEADER -->
