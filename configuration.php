@@ -4,8 +4,8 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'Le Luan';
-	public $editor = 'tinymce';
+	public $sitename = 'Cơn Bão Việt';
+	public $editor = 'jce';
 	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
@@ -21,7 +21,7 @@ class JConfig {
 	public $secret = 'EpMPUNz49npYPvq0';
 	public $gzip = '0';
 	public $error_reporting = 'default';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help16:{keyref}';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
 	public $ftp_user = '';
@@ -51,10 +51,16 @@ class JConfig {
 	public $sef = '1';
 	public $sef_rewrite = '0';
 	public $sef_suffix = '0';
-	public $unicodeslugs = '0';
+	public $unicodeslugs = '1';
 	public $feed_limit = '10';
 	public $log_path = 'D:\\SVN Working 2\\leluan/logs';
 	public $tmp_path = 'D:\\SVN Working 2\\leluan/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
 }
