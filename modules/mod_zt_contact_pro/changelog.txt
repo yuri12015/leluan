@@ -1,0 +1,29 @@
+Name: ZT Contact Pro
+Author: ZooTemplate
+creationDate: October 01, 2010
+Copyright (c) 2009 - 2012 ZooTemplate. All rights reserved.
+AuthorURL: http://www.zootemplate.com/
+Description: JV Contact Pro by ZooTemplate
+---------------------------------------------------------
+CHANGE LOG:
+
+Legend:
+
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+------------ 2.5.0 Release [06-Jan-2012] ------------
+06-Jan-2012 GeorgeTong
+^ -> Upgrade Joomla 2.5
+------------ 1.5.3 Release [29-October-2011] ------------
+29-October-2011 GeorgeTong
+# Fix bug send mail
+------------ 1.5.2 Release [20-May-2011] ------------
+24-March-2010 GeorgeTong
+# Fix bug send mail Field array, js field
++ Addition Value|title can use type value
+
+

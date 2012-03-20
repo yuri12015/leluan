@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7.0"
+	client="site"
+	method="upgrade">
+	<name>ZT Headline</name>
+	<author>ZooTemplate</author>
+	<creationDate>July 20, 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 http://www.ZooTemplate.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>	
+	<authorEmail>support@zootemplate.com</authorEmail>
+	<authorUrl>www.zootemplate.com</authorUrl>
+	<version>1.7.1</version>
+	<description>ZT_INSTALLATION</description>
+	<files>
+		<filename module="mod_zt_headline">mod_zt_headline.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>zt_thumbnail.php</filename>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>assets/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_zt_headline.ini</language>
+	</languages>
+	<config addfieldpath="/modules/mod_zt_headline/elements/">
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					label="JCATEGORY"
+					description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />	  		
+				<field name="menuitem_type" default="default" type="list" label="Select menu item type" description="">
+					<option value="default">Default</option>
+					<option value="current_page">Current page</option>
+					<option value="input_value">Enter value</option>
+				</field>
+				<field name="link_limage" type="radio" default="0" label="Link images" description="Link images">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="input_itemid" type="text" default="0" label="Input item id" description="" />
+				<field name="intro_length" type="text" default="30" label="Introtext Length" description="Introtext Length" />
+				<field name="timming" type="text" default="5000" label="Delay Time" description="Time delay between each content" />
+				<field name="trans_duration" type="text" default="500" label="Transition duration" description="Trasition duration" />              
+				<field name="ordering" type="list" default="created" label="Order By" description="Order By">
+					<option value="created">Recently Added</option>
+					<option value="modified">Recently Modified</option>
+					<option value="ordering">Ordering </option>
+				</field>
+				<field name="sort_order" type="radio" default="desc" label="Sort Order" description="Sort Order">
+					<option value="desc">Descending</option>
+					<option value="asc">Ascending</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="Cache Time for thumb images" />
+				<field name="rmcache" type="rmcache" default="" description="" label="" />
+				<field name="layout_style" type="stylies" default="jv_slide1" description="Style" label="Style" />
+				   
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_news_thumbs" default="zt-assets/" label="Thumbs path directory" type="text" description="Thumbs path directory" />
+				<field name="jv_news_height" default="360" label="Height of module" type="text" description="Height of module" />
+				<field name="news_thumb_width" default="300" label="Width of Thumbnail" type="text" description="Width of Thumbnail" />
+				<field name="news_thumb_height" default="200" label="Height of Thumbnail" type="text" description="Height of Thumbnail" />   
+				<field name="news_no_item" default="10" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="news_event_type" type="list" default="mouseover" label="Event type" description="Event type">
+					<option value="click">Click</option>
+					<option value="mouseover">Mouseover</option>
+				</field> 
+				<fields name="jv_news_slidebar_width" default="300" label="Width Of SlideBar" type="text" description="Width Of SlideBar" />
+				<field name="news_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_eoty_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				<field name="jveoty_width" type="text" default="960" label="Module Width" description="Module Width" />
+				<field name="jveoty_height" type="text" default="308" label="Module Height" description="Module Height" />
+				<field name="jveoty_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>     
+				<field name="jveoty_no_item" default="5" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="jveoty_enable_description" type="radio" default="1" label="Enable Description" description="Enable Description">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field> 
+				<field name="jveoty_height_des" type="text" default="50" label="Height Of Description" description="Height Of Description" />
+				<field name="jveoty_enable_link_article" type="radio" default="1" label="Enable Link To Article" description="Enable Link To Article">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jveoty_enable_btn" type="radio" label="Show Next/Prev Button" description="Show Next/Prev Button" default="1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field> 
+				<field name="jveoty_no_slice" type="text" label="Number Of Slices" description="Number Of Slices" default="15" />
+				<field name="jveoty_effect_type" type="list" label="Animation Type" description="Animation Type" default="random">
+					<option value="random">Random</option>
+					<option value="sliceDownRight">Slice Down Right</option>
+					<option value="sliceDownLeft">Slice Down Left</option>
+					<option value="sliceUpRight">Slice Up Right</option>
+					<option value="sliceUpLeft">Slice Up Left</option>
+					<option value="sliceUpDown">Slice Up Down</option>
+					<option value="sliceUpDownLeft">Slice Up Down Left</option>
+					<option value="fold">Fold</option>
+					<option value="fade">Fade</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_lago_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				<field name="jv_lago_height" type="text" default="300" label="Module height" description="" />
+				<field name="jv_lago_main_width" type="text" default="590" label="Main Slideshow Width" description="" /> 
+				<field name="jv_lago_slidebar_width" type="text" default="340" label="Slidebar Width" description="" />
+				<field name="lago_hitem_sliderbar" type="text" default="100" label="Item's height of slidebar" description = "Item's height of slidebar" />
+				<field name="lago_thumb_width" type="text" default="75" label="Thumbnail width" description="Thumbnail width" />
+				<field name="lago_thumb_height" type="text" default="75" label="Thumbnail height" description="Thumbnail height" />
+				<field name="lago_no_item" type="text" default="5" label="Limit Items" description="The number of items to display (default 3)" />				
+				<field name="max_show_item" type="text" default="3" label="Max Nav Items display" description="Max Nav Items display" />
+				<field name="lago_show_next" type="radio" default="0" label="Show button next/pre" description="">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>  
+			   
+				<field name="lago_enable_link_apanel" type="radio" default="1" label="Enable link to article in panel" description="Enable link to article in panel">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				<field name="jv_lago_auto" type="list" default="1" label="Auto play" description="Auto play">
+					 <option value='1'>Yes</option>
+					 <option value='0'>No</option>
+				 </field> 
+				<field name="lago_enable_link_artslidebar" type="radio" default="1" label="Enable link to article in slidebar" description="Enable link to article in slidebar">
+				 <option value="0">Disable</option>
+				 <option value="1">Enable</option>
+				</field>   
+				<field name="lago_animation" default="jvslideshow" type="list" label="Animation duration" description ="Animation duration">
+				  <option value="jvslideshow">JV slideshow</option>
+				  <option value="fadeslideleft">Fade right to left</option>
+				  <option value="fadeslideright">Fade left to right</option>
+				  <option value="continuoushorizontal">Continuous right to left</option>
+				  <option value="continuoushorizontalright">Continuous left to right</option>
+				  <option value="continuousvertical">Continuous bottom to up</option>
+				  <option value="continuousverticalbuttom">Continous top to down</option>
+				</field> 
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_sello2_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				<field name="sello2_temp" type="list" default="1" label="Choose temp" description="Choose temp for sello2">
+					 <option value="zt_sello2">zt_sello2</option>
+					 <option value="zt_jorda">zt_jorda</option>
+				</field>
+				<field name="jv_sello2_height" default="140" type="text" label="Module height" description="" />
+				<field name="jv_sello2_width" default="915" type="text" label="Module width" description="" />
+				<field name="sello2_no_items_per_line" type="text" default="2" label="Number items per line" description="Number items per line.  Only for slideshow4" />
+				<field name="sello2_thumb_width" type="text" default="168" label="Thumbnail Width" description="" />
+				<field name="sello2_thumb_height" type="text" default="69" label="Thumbnail Height" description="" />
+				<field name="sello2_no_item" default="10" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="sello2_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					 <option value="0">Hide</option>
+					 <option value="1">Show</option>
+				</field>
+			   
+				<field name="sello2_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+					   <option value="0">No</option>
+					   <option value="1">Yes</option>
+				  </field>
+				<field name="sello2_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />  
+				<field name="jv_sello1_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" /> 	
+				<field name="jv_sello1_width" default="980" type="text" label="Module width" description="" /> 
+				<field name="sello1_imgslide_height" default="340" type="text" label="Height of image slideshow" description="" />
+				<field name="sello1_imgslide_width" default="980" type="text" label="Width of image slideshow" description="Width of image slideshow" />
+				<field name="sello1_no_item" default="8" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="sello1_animation" default="jvslideshow" type="list" label="Animation duration" description ="Animation duration">
+				   <option value="jvslideshow">JV slideshow</option>
+				   <option value="fadeslideleft">Fade right to left</option>
+				   <option value="fadeslideright">Fade left to right</option>
+				   <option value="continuoushorizontal">Continuous right to left</option>
+				   <option value="continuoushorizontalright">Continuous left to right</option>
+				   <option value="continuousvertical">Continuous bottom to up</option>
+				   <option value="continuousverticalbuttom">Continous top to down</option>
+				</field>  
+				   
+				<field name="sello1_thumb_width" type="text" default="102" label="Thumbnail Width" description="" />
+				<field name="sello1_thumb_height" type="text" default="38" label="Thumbnail Height" description="" />
+				<field name="sello1_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				<field name="sello1_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+					   <option value="0">No</option>
+					   <option value="1">Yes</option>
+				</field>
+				 <field name="@spacer" type="spacer" default="" label="" description="" />
+				 <field name="jv_maju_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				 <field name="jv_maju_width" default="640" type="text" label="Module Width" description ="" />
+				 <field name="jv_maju_height" default="306" type="text" label="Module Height" description ="" />
+				 <field name="maju_thumb_width" type="text" default="56" label="Thumbnail Width" description="" />
+				 <field name="maju_thumb_height" type="text" default="45" label="Thumbnail Height" description="" />
+				 <field name="maju_no_item" default="4" label="No.of Item" type="text" description="No. Of Item" />
+				 <field name="maju_animation" default="jvslideshow" type="list" label="Animation duration" description ="Animation duration">
+					<option value="jvslideshow">JV slideshow</option>
+					<option value="fadeslideleft">Fade right to left</option>
+					<option value="fadeslideright">Fade left to right</option>
+					<option value="continuoushorizontal">Continuous right to left</option>
+					<option value="continuoushorizontalright">Continuous left to right</option>
+					<option value="continuousvertical">Continuous bottom to up</option>
+					<option value="continuousverticalbuttom">Continous top to down</option>
+				</field> 
+				 
+				<field name="maju_show_next" type="radio" default="0" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				<field name="maju_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+						 <option value="0">No</option>
+						 <option value="1">Yes</option>
+				  </field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_jv7_main_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				<field name="jv7_main_width" default="644" type="text" label="Main Item Width" description =""  />
+				<field name="jv7_height" default="300" type="text" label="Module Height" description ="" />   
+				<field name="jv7_no_item" default="10" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="jv7_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				
+				<field name="jv7_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+					   <option value="0">No</option>
+					   <option value="1">Yes</option>
+				  </field>
+				<field name="jv7_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+						 <option value="0">No</option>
+						 <option value="1">Yes</option>
+				</field>    
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="jv_pedon_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				 <field name="jv_pedon_width" default="640" type="text" label="Module Width" description ="" />
+				<field name="jv_pedon_height" default="306" type="text" label="Height Of Main Content" description ="" />
+				<field name="pedon_thumb_width" type="text" default="84" label="Thumbnail Width" description="" />
+				<field name="pedon_thumb_height" type="text" default="35" label="Thumbnail Height" description="" />
+				 <field name="pedon_no_item" default="6" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="pedon_animation" default="fadeslideright" type="list" label="Animation duration" description ="Animation duration">
+				   <option value="jvslideshow">JV slideshow</option>
+				   <option value="fadeslideleft">Fade right to left</option>
+				   <option value="fadeslideright">Fade left to right</option>
+				   <option value="continuoushorizontal">Continuous right to left</option>
+				   <option value="continuoushorizontalright">Continuous left to right</option>
+				   <option value="continuousvertical">Continuous bottom to up</option>
+				   <option value="continuousverticalbuttom">Continous top to down</option>
+				</field> 
+				 
+				<field name="pedon_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				<field name="pedon_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+						 <option value="0">No</option>
+						 <option value="1">Yes</option>
+				</field>	 
+				<field name="jv_jv9_main_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				<field name="jv9_main_width" type="text" default="960" label="Module width" description="Module width" />
+				<field name="jv9_main_height" type="text" default="320" label="Module height" description="Module height" />	 
+				<field name="jv9_expand_width" type="text" default="700" label="Width of Expand Item" description="Width Of Expand Item" />
+				<field name="jv9_height_desc" type="text" default="80" label="Height Of Description" description="Height Of Description" />
+				<field name="jv9_no_item" type="text" default="5" label="No Items" description="No Items" />
+				<field name="jv9_eventtype" type="list" default="mouseenter" label="Event type" description="Event type">
+					<option value="click">Click</option>
+					<option value="mouseenter">Mouse Over</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="zt_flow_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				 <field name="zt_flow_width" default="700" type="text" label="Module Width" description ="" />
+				<field name="zt_flow_height" default="230" type="text" label="Height Of Main Content" description ="" />
+				<field name="zt_flow_thumb_width" type="text" default="350" label="Thumbnail Width" description="" />
+				<field name="zt_flow_thumb_height" type="text" default="230" label="Thumbnail Height" description="" />
+				 <field name="zt_flow_no_item" default="6" label="No.of Item" type="text" description="No. Of Item" />
+				 <field name="zt_flow_duration" default="4000" label="Transaction" type="text" description="transaction" />
+				<field name="zt_play" default="1" type="radio" label="Auto Play" description ="Auto Play">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="zt_flow_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				<field name="zt_flow_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+						 <option value="0">No</option>
+						 <option value="1">Yes</option>
+				</field>
+				<field name="zt_iner_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />
+				 <field name="zt_iner_width" default="640" type="text" label="Module Width" description ="" />
+				<field name="zt_iner_height" default="306" type="text" label="Height Of Main Content" description ="" />
+				<field name="iner_thumb_width" type="text" default="84" label="Thumbnail Width" description="" />
+				<field name="iner_thumb_height" type="text" default="35" label="Thumbnail Height" description="" />
+				 <field name="iner_no_item" default="6" label="No.of Item" type="text" description="No. Of Item" />
+				<field name="iner_animation" default="fadeslideright" type="list" label="Animation duration" description ="Animation duration">
+				   <option value="jvslideshow">JV slideshow</option>
+				   <option value="fadeslideleft">Fade right to left</option>
+				   <option value="fadeslideright">Fade left to right</option>
+				   <option value="continuoushorizontal">Continuous right to left</option>
+				   <option value="continuoushorizontalright">Continuous left to right</option>
+				   <option value="continuousvertical">Continuous bottom to up</option>
+				   <option value="continuousverticalbuttom">Continous top to down</option>
+				</field>  
+				<field name="iner_show_next" type="radio" default="1" label="Show button next/pre" description="">
+					   <option value="0">Hide</option>
+					   <option value="1">Show</option>
+				</field>
+				<field name="iner_readmore" type="radio" default="1" label="Read more" description="Show readmore">
+						 <option value="0">No</option>
+						 <option value="1">Yes</option>
+				</field>
+				<field name="zt_scroll_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />  
+				<field name="zt_scroll_height" default="240" type="text" label="Module height" description="" />
+				<field name="zt_scroll_width" default="900" type="text" label="Module width" description="" />
+				<field name="zt_scroll_thumb_width" type="text" default="200" label="Thumbnail Width" description="" />
+				<field name="zt_scroll_thumb_height" type="text" default="85" label="Thumbnail Height" description="" />
+				<field name="zt_scroll_item_width" type="text" default="225" label="Item Width" description="Item width" />
+				<field name="scroll_no_item" default="12" label="No.of Item" type="text" description="No.of Item" />
+				<field name="transitions" type="list" default="Fx.Transitions.Quad.easeOut" label="Transitions" description="Transitions for scroll">
+					<option value="Fx.Transitions.linear">linear</option>
+					<option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+					<option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+					<option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+					<option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+					<option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+					<option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+					<option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+					<option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+					<option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+					<option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+					<option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+					<option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+					<option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+					<option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+					<option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+					<option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+					<option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+					<option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+					<option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+					<option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+					<option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+					<option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+					<option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+					<option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+					<option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+					<option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+					<option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+					<option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+					<option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+					<option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+					<option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+					<option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+					<option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>
+				</field>
+				<field name="item_display" default="4" label="Item Display" type="text" description="Item display for scroll" />
+				<field name="duration" default="2000" label="Duration" type="text" description="Duration for scroll" /> 
+				<field name="zt_scroll_next" type="radio" default="1" label="Show button next/pre" description="">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field> 
+				<field name="zt_scroll_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="zt_meda_thumbs" type="text" default="zt-assets/" label="Thumbs path directory" description="Thumbs path directory" />   
+				<field name="zt_meda_width" default="915" type="text" label="Module width" description="" />
+				<field name="zt_meda_thumb_width" type="text" default="225" label="Thumbnail Width" description="" />
+				<field name="zt_meda_thumb_height" type="text" default="250" label="Thumbnail Height" description="" /> 
+				<field name="meda_no_item" default="12" label="No.of Item" type="text" description="No.of Item" />
+				<field name="meda_transitions" type="list" default="Fx.Transitions.Quad.easeOut" label="Transitions" description="Transitions for scroll">
+					<option value="Fx.Transitions.linear">linear</option>
+					<option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+					<option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+					<option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+					<option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+					<option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+					<option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+					<option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+					<option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+					<option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+					<option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+					<option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+					<option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+					<option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+					<option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+					<option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+					<option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+					<option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+					<option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+					<option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+					<option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+					<option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+					<option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+					<option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+					<option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+					<option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+					<option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+					<option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+					<option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+					<option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+					<option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+					<option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+					<option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+					<option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>
+				</field>
+				<field name="meda_item_display" default="4" label="Item Display" type="text" description="Item display for scroll" />
+				<field name="zt_meda_readmore" type="radio" default="1" label="Show Readmore" description="Show Readmore">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="meda_duration" default="2000" label="Duration" type="text" description="Duration for scroll" /> 
+				<field name="zt_meda_next" type="radio" default="1" label="Show button next/pre" description="">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field> 
+				<field name="zt_meda_autorun" type="radio" default="1" label="Autorun" description="Autorun">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

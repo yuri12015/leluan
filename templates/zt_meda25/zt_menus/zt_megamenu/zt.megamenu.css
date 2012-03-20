@@ -1,0 +1,396 @@
+.menusys_mega {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.menusys-left {
+ width: 450px;
+ float: left;
+}
+.menusys-right {
+ width: 400px;
+ float: right;
+}
+#menusys_mega {
+	margin:0px;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+#menusys_mega .menusub_mega {
+	margin: 0;
+	position: absolute;
+	z-index: 888;
+	padding:0;
+	
+}
+#menusys_mega .submenu-wrap {
+	padding:0px;
+	float: left;
+}
+/*
+#menusys_mega .submenu-wrap-inner{
+	padding:0px;
+	float: left;
+	border:1px solid #7cb627;
+}
+*/
+
+
+#menusys_mega .megacol .submenu-wrap{
+	background:0;
+	border:0;
+}
+
+#menusys_mega li {
+	padding: 0; 
+	float: left;
+	display: block;
+	height:46px;
+	background:0;
+	margin:0px;
+}
+#menusys_mega li.last-item{
+	background:0;
+}
+
+#menusys_mega li a {
+	padding:0px;
+	display: block;
+	text-decoration: none;
+	z-index: 100;
+	cursor:pointer;
+    font-size: 130%;
+	position:relative;
+	z-index:10;
+	padding:0 0 0 25px ;
+	line-height: 46px;
+}
+
+#menusys_mega .menu-title {
+    color: #080808;
+    display: block;
+	cursor:pointer;
+	z-index:11;
+	text-transform:uppercase;
+	padding:0px 25px 0 0 ;
+}
+
+#menusys_mega .menu-desc {
+	padding: 0;
+	color: #080808;
+	border: none;
+	display: block;
+	font-size: 100%;
+	line-height: 0;
+	font-weight: normal;
+	width: 100%;
+	line-height: 28px;
+}
+
+#menusys_mega .menu-image {
+	border: none;
+	float: left;
+	padding: 0px;
+}
+#menusys_mega .menu-image img {
+}
+#menusys_mega li:hover,
+#menusys_mega li:active,
+#menusys_mega li:focus {
+	
+}
+#menusys_mega .active {
+	
+}
+
+#menusys_mega li:hover a,
+#menusys_mega li:active a,
+#menusys_mega li:focus a,
+#menusys_mega li a.active,
+#menusys_mega li a.active:hover,
+#menusys_mega li a.active:active,
+#menusys_mega li a.active:focus {
+	color: #ffffff;
+	position:relative;
+	z-index:10;
+	background:url('../../images/bg-menu-active.png') no-repeat left 0;
+}
+#menusys_mega li:hover a .menu-title,
+#menusys_mega li:active a .menu-title,
+#menusys_mega li:focus a .menu-title,
+#menusys_mega li a.active .menu-title,
+#menusys_mega li a.active:hover .menu-title,
+#menusys_mega li a.active:active .menu-title,
+#menusys_mega li a.active:focus .menu-title {
+	color: #ffffff;
+	position:relative;
+	z-index:15;
+	background:url('../../images/bg-menu-active.png') no-repeat right -46px;
+}
+#menusys_mega li:hover a .menu-desc,
+#menusys_mega li:active a .menu-desc,
+#menusys_mega li:focus a .menu-desc,
+#menusys_mega li a.active .menu-desc,
+#menusys_mega li a.active:hover .menu-desc,
+#menusys_mega li a.active:active .menu-desc,
+#menusys_mega li a.active:focus .menu-desc {
+	color: #ffffff;
+}
+
+span.has-image {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+}
+span.no-image {
+	display: block;
+}
+
+#menusys_mega .mega-group{
+	padding:0 5px;
+}
+#menusys_mega .megacol {
+	float: left;
+	padding: 0;
+}
+#menusys_mega .submenu-wrap-inner .megacol {
+	float: left;
+}
+#menusys_mega .mega-group .no-image{
+	padding:0;
+}
+#menusys_mega .mega-group a{
+	padding:0;
+	background:0  !important;
+}
+#menusys_mega .mega-group .menu-title{ 
+	font-size:100%;
+	padding:10px 0;
+	font-family:arial;
+	/*border-bottom:1px solid #ffffff;*/
+	font-weight:bold;
+	line-height:100%;
+	color:#ffffff !important;
+	background:0 !important;
+}
+
+#menusys_mega .mega-group .menu-desc{
+	font-size:70%;
+	padding:0 0 10px 0;
+	line-height:20px;
+	color:#ffffff !important;
+} 
+#menusys_mega .megacol ul.mega-ul {
+	padding: 0 5px;
+	margin: 0;
+}
+#menusys_mega .megacol ul li {
+	float:none;
+	border:none;
+	line-height:0;
+	height:auto;
+	background:url('../../images/megamenu/bg-list-button.png') repeat-x left bottom;
+	padding:0;
+	margin: 0;
+}
+#menusys_mega .megacol ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size:100%;
+	padding:0;
+	margin:0;
+	background:0;
+	
+}
+
+#menusys_mega .megacol ul li a span.no-image {
+    padding: 0 0 0 15px;
+	background: url("../../images/megamenu/arrow2.png") no-repeat 0 50%;
+}
+
+#menusys_mega .megacol ul li a .menu-title {
+    padding: 0;
+	margin:0;
+    color: #ffffff;
+    font-size: 105%;
+    line-height: 30px;
+	background:0;
+    text-transform: none;
+}
+#menusys_mega .megacol ul li a:hover,
+#menusys_mega .megacol ul  li a:active,
+#menusys_mega .megacol ul  li a:focus,
+#menusys_mega .megacol ul  li a.active,
+#menusys_mega .megacol ul  li a.active:hover,
+#menusys_mega .megacol ul  li a.active:active,
+#menusys_mega .megacol ul  li a.active:focus{
+	color: #ffffff;
+	background:0;
+}
+#menusys_mega .megacol ul li a:hover .menu-title ,
+#menusys_mega .megacol ul  li a:active .menu-title ,
+#menusys_mega .megacol ul  li a:focus .menu-title ,
+#menusys_mega .megacol ul  li a.active .menu-title ,
+#menusys_mega .megacol ul  li a.active:hover .menu-title ,
+#menusys_mega .megacol ul  li a.active:active .menu-title ,
+#menusys_mega .megacol ul  li a.active:focus .menu-title {
+	color: #ffffff;
+	background:0;
+}
+	
+#menusys_mega .megacol ul li a:hover  span.no-image,
+#menusys_mega .megacol ul  li a:active  span.no-image,
+#menusys_mega .megacol ul  li a:focus  span.no-image,
+#menusys_mega .megacol ul  li a.active  span.no-image,
+#menusys_mega .megacol ul  li a.active:hover  span.no-image,
+#menusys_mega .megacol ul  li a.active:active  span.no-image,
+#menusys_mega .megacol ul  li a.active:focus  span.no-image{
+	color: #ffffff;
+	background:url("../../images/megamenu/arrow2-hover.png") no-repeat left 50%;
+	
+}
+
+
+#menusys_mega .menusub_mega .mega-module {
+	clear: both;
+	padding: 0;
+	
+}
+#menusys_mega  .menusub_mega .moduletable {
+	
+	padding:0 10px;
+	
+	color:#ffffff;
+}
+#menusys_mega .menusub_mega .mega-module p{
+	margin:0;
+	padding:0 10px 0 0;
+	line-height:20px;
+	font-size: 105%;
+}
+
+.menusub_mega {
+	display: none;
+}
+
+
+
+#menusys_mega li.hasChild.hover {
+	height: 42px;
+}
+
+/*add new by jorda ZooTemplate*/
+
+
+#menusys_mega .subarrowtop {
+  background: url("../../images/megamenu/arrow.png") no-repeat left top;
+  display: block;
+  height: 19px;
+  left: 50px;
+  position: relative;
+  top: 8px;
+  width: 27px;
+  z-index: 999;
+}
+#menusys_mega .subwraptop {
+	height:15px;
+	position:relative;
+	display:block;
+	margin:0px 15px;
+	background: url("../../images/megamenu/top-center.png") top left repeat-x;
+}
+#menusys_mega .subwraptop .subwraptop-left{
+	background: url("../../images/megamenu/top-left.png") top left no-repeat;
+	width:15px;
+	height:15px;   
+	position:absolute;
+	top:0;
+	left:-15px;
+}
+	
+#menusys_mega .subwraptop .subwraptop-right{	
+	background: url("../../images/megamenu/top-right.png") top right no-repeat;
+	width:15px;
+	height:15px;  
+	position:absolute;
+	top:0;
+	right:-15px;
+}
+
+#menusys_mega .subwrapcenter {
+	background:#e1471d url("../../images/megamenu/mid-center.png") top left repeat-x;
+	float:left;
+	display:block;
+	padding: 0 10px;
+}
+#menusys_mega  .subwrapcenter-left{
+	padding: 0 0 0 5px;
+	clear: both;
+	background: url("../../images/megamenu/mid-left.png") top left repeat-y;
+	float: left;
+}
+	
+#menusys_mega  .subwrapcenter-right{	
+	padding: 0 5px 0 0;
+	background: url("../../images/megamenu/mid-right.png") top right repeat-y;
+	float:left;
+}
+
+
+#menusys_mega .subwrapbottom{
+	background: url("../../images/megamenu/bot-center.png") top left repeat-x;
+	height:15px;
+	position:relative;
+	display:block;
+	margin:0px 15px;
+	clear:both;
+}
+#menusys_mega .subwrapbottom .subwrapbottom-left{
+	background: url("../../images/megamenu/bot-left.png") top left no-repeat;
+	width:15px;
+	height:15px;   
+	position:absolute;
+	top:0;
+	left:-15px;
+}
+	
+
+#menusys_mega .subwrapbottom .subwrapbottom-right{	
+	background: url("../../images/megamenu/bot-right.png") top right no-repeat;
+	width:15px;
+	height:15px;  
+	position:absolute;
+	top:0;
+	right:-15px;
+}
+
+
+#menusys_mega div.items{
+	width:100%;
+	float:left;
+	line-height:20px;
+}
+#menusys_mega div.items .item{
+	width:100%;
+	float:left;
+	padding:5px 0;
+	color:#ffffff;
+	background:url('../../images/megamenu/bg-list-button.png') repeat-x left bottom;
+}
+#menusys_mega div.items .item:hover{
+	cursor:pointer;
+	background:#e2532c url('../../images/megamenu/bg-list-button.png') repeat-x left bottom;
+}
+
+#menusys_mega div.items .item .caption{
+	background:#f0a38e;
+	border:0;
+}
+#menusys_mega div.items .item .title{
+	font-size:100%;
+	margin:10px 0 0 0;
+}
+#menusys_mega div.items .item .date{
+	font-size:90%;
+}

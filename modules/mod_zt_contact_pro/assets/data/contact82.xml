@@ -1,0 +1,95 @@
+<contact version="1" xmlns="http://xspf.org/ns/0/">
+	 						<elementList>
+<param>
+
+						 								<type>text</type>
+<intro><![CDATA[<a title="JV Contact Pro" href="http://www.zootemplate.com/Joomla-Extensions/Commercial-extensions/Joomla-Contact-Pro-Module.html">JV Contact Pro</a> is a lightweight, fast and easy, configuring a contact form joomla 1.5 module which allows customers to contact your site administrator by e-mail very fast and secure<br><br>For updates and upgrades please visit <a title="joomla templates" target="blank" href="http://www.zootemplate.com">Joomla Templates</a><a> Club</a>]]></intro>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Name</fieldtitle>
+
+						 								<fieldname>name</fieldname>
+
+						 								<valid>1</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Email</fieldtitle>
+
+						 								<fieldname>email</fieldname>
+
+						 								<valid>1</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Address</fieldtitle>
+
+						 								<fieldname>address</fieldname>
+
+						 								<valid>0</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>selected</type>
+<fieldtitle>Choose Templates</fieldtitle>
+
+						 								<fieldname>template</fieldname>
+
+						 								<valid>1</valid>
+<size>5</size>
+
+						 					  			<multi>1</multi>
+<value>JV Maju</value>
+<value>JV Mira</value>
+</param>
+<param>
+
+						 								<type>radio</type>
+<fieldtitle>Like For Template</fieldtitle>
+
+						 								<fieldname>like</fieldname>
+
+						 								<valid>1</valid>
+<value>JV Pedon</value>
+<value>JV Apogo</value>
+<value>JV Kentro</value>
+</param>
+<param>
+
+						 								<type>checkbox</type>
+<fieldtitle>Choose download</fieldtitle>
+
+						 								<fieldname>download</fieldname>
+
+						 								<valid>0</valid>
+<value>Quickstart</value>
+<value>Temp Psd</value>
+<value>Temp zip</value>
+</param>
+<param>
+
+						 								<type>textarea</type>
+<fieldtitle>Message</fieldtitle>
+
+						 								<fieldname>message</fieldname>
+
+						 								<valid>0</valid>
+<cols>30</cols>
+
+					 					        		<rows>5</rows>
+</param>
+</elementList>
+	 					</contact>

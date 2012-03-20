@@ -1,0 +1,156 @@
+/*------------------------------------------------------------------------
+* Copyright (c) 2008-2012 ZooTemplate. All Rights Reserved.
+* @license - Copyrighted Commercial Software
+* Author: ZooTemplate
+* Websites:  http://www.zootemplate.com
+-------------------------------------------------------------------------*/
+html {
+	direction: rtl;
+}
+/*logo*/
+a.readon {
+  float: right;
+}
+ul.menu2 li a {
+  background: url("../images/arrow.png") no-repeat right 50%;
+  line-height: 28px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+img.caption {
+  float: right;
+  margin: 0 0 0 10px;
+}
+ul.menu2 li a:hover {
+  background: url("../images/arrow-hover.png") no-repeat right 50%;
+}
+
+ul#mainlevel li a, 
+ul.menu li a {
+  background: url("../images/arrow.png") no-repeat right 50%;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+#zt-logo {
+  float: right;
+}
+#zt-search {
+  float: left;
+}
+#zt-search .search .button {
+  float: left;
+  margin: 0 0 0 6px;
+}
+#zt-search .search .inputbox {
+  float: right;
+  margin: 1px 20px 0 0;
+}
+/*menu*/
+#menusys_mega li {
+  float: right;
+}
+
+/*slide*/
+#ztbacktotop {
+  right: auto;
+  left: 10px;
+}
+#zt-slideshow-inner .info {
+  float: right;
+  margin:100px 20px 0 0 ;
+}
+#zt-slideshow-inner .jvcarousel-item img {
+  right: auto;
+  left: 20px;
+}
+
+/*col1*/
+
+#zt-col1 .info {
+  float: right;
+  padding: 0 20px 0 0;
+}
+#zt-col1 .link {
+  float: left;
+}
+
+/*col2*/
+#zt-col2 ul.zt-scroll li.item {
+  float:right;
+}
+#zt-col2 .second-scroll {
+  float: right;
+}
+
+/*col3*/
+#zt-col3 div.latestnewsitems img {
+  float:right;
+}
+#zt-col3 .des {
+  float: right;
+}
+
+/*user 20*/
+
+
+#zt-userwrap5-inner .zt-user{
+	float:right;
+}
+#zt-userwrap5-inner #myForm #email, 
+#zt-userwrap5-inner #myForm #name {
+  float: right;
+}
+#zt-userwrap5-inner #myForm #name {
+  margin: 0 0 0 5px;
+}
+#zt-col4 {
+  float: right;
+  left: auto;
+  right: 0;
+}
+#zt-col4 ul li {
+  float: right;
+}
+
+/*footer*/
+#zt-copyright {
+  float: right;
+}
+
+#zt-footer-menu {
+  float: left;
+}
+#zt-footer-menu ul {
+  float: left;
+}
+#zt-footer-menu li {
+  float: left;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+/*menu*/
+#menusys_mega .subarrowtop {
+  left: autro;
+  right: 50px;
+}
+
+#menusys_mega .megacol ul li a span.no-image {
+	padding: 0 15px 0 0;
+  background: url("../../images/megamenu/arrow2.png") no-repeat right 50%;
+}
+
+#menusys_mega .megacol ul li a:hover  span.no-image,
+#menusys_mega .megacol ul  li a:active  span.no-image,
+#menusys_mega .megacol ul  li a:focus  span.no-image,
+#menusys_mega .megacol ul  li a.active  span.no-image,
+#menusys_mega .megacol ul  li a.active:hover  span.no-image,
+#menusys_mega .megacol ul  li a.active:active  span.no-image,
+#menusys_mega .megacol ul  li a.active:focus  span.no-image{
+	background:url("../../images/megamenu/arrow2-hover.png") no-repeat right 50%;
+	
+}
+#menusys_mega .submenu-wrap-inner .megacol {
+  float: right;
+}

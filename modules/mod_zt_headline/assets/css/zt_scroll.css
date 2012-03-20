@@ -1,0 +1,71 @@
+div#main-scroll {
+	overflow: hidden;
+	width: 100%;
+	float: left;
+} 
+div.pagenav {
+	float: right;
+    margin-bottom: 5px;
+    text-align: right;
+    width: 30px;
+	position: relative;
+	top: 9px;
+}
+div.slide-scroll {
+	position: relative;
+	overflow: hidden;
+} 
+div.second-scroll {
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 5px 5px 5px 5px;
+    padding: 8px 5px 9px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	float: left;
+}
+ul.zt-scroll {
+	position: relative; 
+	margin: 0px;
+	padding: 0px;
+} 
+ul.zt-scroll li.item {
+	float: left;
+	list-style: none;
+	padding: 0;
+	background: none;
+}
+div.inner-item {
+	padding: 1px 10px 0 2px;
+}
+div.inner-item p {
+	padding-top: 5px;
+} 
+span.scroll_title {
+	overflow: hidden;
+	width: 100%;
+	float: left;
+	padding-bottom: 4px;
+}
+span.pre {
+	background: url(../images/pagenav.gif) no-repeat 0 100%;
+	cursor: pointer;
+	text-indent: -999em;
+	float: left;
+    height: 13px;
+    text-indent: -999em;
+    width: 15px;
+}
+span.pre:hover {
+	background: url(../images/pagenav.gif) no-repeat 0 0;
+}
+span.next {
+	background: url(../images/pagenav.gif) no-repeat 100% 100%;
+	cursor: pointer;
+	text-indent: -999em;
+	float: left;
+    height: 13px;
+    text-indent: -999em;
+    width: 15px;
+}
+span.next:hover {
+	background: url(../images/pagenav.gif) no-repeat 100% 0;
+}

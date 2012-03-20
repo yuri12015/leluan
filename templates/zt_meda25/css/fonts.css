@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------------
+* Copyright (c) 2008-2012 ZooTemplate. All Rights Reserved.
+* @license - Copyrighted Commercial Software
+* Author: ZooTemplate
+* Websites:  http://www.zootemplate.com
+-------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'MetrophobicRegular';
+    src: url('fonts/metrophobic-webfont.eot');
+    src: url('fonts/metrophobic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/metrophobic-webfont.woff') format('woff'),
+         url('fonts/metrophobic-webfont.ttf') format('truetype'),
+         url('fonts/metrophobic-webfont.svg#MetrophobicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'YanoneKaffeesatzRegular';
+    src: url('fonts/yanonekaffeesatz-regular-webfont.eot');
+    src: url('fonts/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/yanonekaffeesatz-regular-webfont.woff') format('woff'),
+         url('fonts/yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
+         url('fonts/yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TienneRegular';
+    src: url('fonts/tienne-regular-webfont.eot');
+    src: url('fonts/tienne-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tienne-regular-webfont.woff') format('woff'),
+         url('fonts/tienne-regular-webfont.ttf') format('truetype'),
+         url('fonts/tienne-regular-webfont.svg#TienneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#zt-col1 .info,
+#zt-slideshow-inner .info .des,
+#menusys_mega .menu-title,
+.button,
+.inputbox{
+	font-family: 'MetrophobicRegular';
+	font-weight: normal;
+    font-style: normal;
+}
+#zt-col2  div.zt-meda-content h3,
+a.readon2,
+a.readon2 span,
+a.readon4,
+a.readon4 span,
+a.readon,
+#zt-col4,
+#zt-col3  div.latestnewsitems h4,
+a.readon span{
+	font-family: 'YanoneKaffeesatzRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+#zt-slideshow-inner  .jvcarousel_mtitle{
+	font-family: 'TienneRegular';
+	font-weight: normal;
+    font-style: normal;
+}
+h1,
+h2,
+h3.moduletitle{
+	font-family: 'YanoneKaffeesatzRegular';
+    font-weight: normal;
+    font-style: normal;
+
+}

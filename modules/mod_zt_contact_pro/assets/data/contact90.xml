@@ -1,0 +1,86 @@
+<contact version="1" xmlns="http://xspf.org/ns/0/">
+	 						<elementList>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Name</fieldtitle>
+
+						 								<fieldname>name</fieldname>
+
+						 								<valid>1</valid>
+<size>20</size>
+
+						 								<length>20</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Email</fieldtitle>
+
+						 								<fieldname>email</fieldname>
+
+						 								<valid>1</valid>
+<size>20</size>
+
+						 								<length>20</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Address</fieldtitle>
+
+						 								<fieldname>address</fieldname>
+
+						 								<valid>1</valid>
+<size>20</size>
+
+						 								<length>20</length>
+</param>
+<param>
+
+						 								<type>selected</type>
+<fieldtitle>How did you hear about us?</fieldtitle>
+
+						 								<fieldname>hear</fieldname>
+
+						 								<valid>1</valid>
+<size></size>
+
+						 					  			<size>0</size>
+<value>Internet Search|Internet Search</value>
+<value>Television Ad|Television Ad</value>
+<value>Radio|Radio</value>
+<value>Phonebook|Phonebook</value>
+<value>Link From a Law Site|Link From a Law Site</value>
+<value>Friend/Family Referral|Friend/Family Referral</value>
+<value>Direct Mail|Direct Mail</value>
+<value>Newsletter|Newsletter</value>
+<value>Other|Other</value>
+</param>
+<param>
+
+						 								<type>text</type>
+<intro>Describe your case, or what type of legal matter you have, or call us.
+In Palm Springs/Palm Desert
+(760) 776-1810
+In San Diego, call
+(858) 204-7935
+In Orange County or Newport Beach, call 
+(866) 943-6486
+In Temecula and Murrieta, call
+(800) 589-3202 </intro>
+</param>
+<param>
+
+						 								<type>textarea</type>
+<fieldtitle>Message</fieldtitle>
+
+						 								<fieldname>message</fieldname>
+
+						 								<valid>1</valid>
+<cols>20</cols>
+
+					 					        		<rows>6</rows>
+</param>
+</elementList>
+	 					</contact>

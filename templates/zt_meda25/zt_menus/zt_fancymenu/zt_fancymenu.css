@@ -1,0 +1,45 @@
+
+/*
+	For megamenu
+*/
+#menusys_mega li:hover a,
+#menusys_mega li:active a,
+#menusys_mega li:focus a,
+#menusys_mega li a.active,
+#menusys_mega li a.active:hover,
+#menusys_mega li a.active:active,
+#menusys_mega li a.active:focus {
+	background: none;
+}
+#menusys_mega li:hover a .menu-title,
+#menusys_mega li:active a .menu-title,
+#menusys_mega li:focus a .menu-title,
+#menusys_mega li a.active .menu-title,
+#menusys_mega li a.active:hover .menu-title,
+#menusys_mega li a.active:active .menu-title,
+#menusys_mega li a.active:focus .menu-title {
+	background: none;
+}
+#menusys_mega .fancy{
+	margin: 0;
+	position: absolute;
+	visibility: hidden;
+	height:46px;
+	z-index: 1;
+}
+#menusys_mega .fancy .fancy-left {
+    margin: 0 25px 0 0 ;
+    padding: 0;
+	height:46px;
+	background:url('../../images/bg-fancy-menu.png') no-repeat left 0;
+}
+#menusys_mega .fancy .fancy-right{
+   height: 46px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+	background:url('../../images/bg-fancy-menu.png') no-repeat right -46px;
+}

@@ -1,0 +1,87 @@
+<contact version="1" xmlns="http://xspf.org/ns/0/">
+	 						<elementList>
+
+				 					<param>
+
+				 					<type>textfield</type>
+
+				 						<fieldtitle>Name</fieldtitle>
+
+										<fieldname>name</fieldname>
+
+										<valid>1</valid>
+</param>
+
+				 					<param>
+
+				 					<type>textfield</type>
+
+				 						<fieldtitle>Email</fieldtitle>
+
+										<fieldname>email</fieldname>
+
+										<valid>1</valid>
+</param>
+
+				 					<param>
+
+				 					<type>textfield</type>
+
+				 						<fieldtitle>Address</fieldtitle>
+
+										<fieldname>address</fieldname>
+
+										<valid>0</valid>
+</param>
+
+				 					<param>
+
+				 					<type>textarea</type>
+
+				 						<fieldtitle>Message</fieldtitle>
+
+										<fieldname>message</fieldname>
+
+										<valid>0</valid>
+</param>
+
+				 					<param>
+
+				 					<type>selected</type>
+
+				 						<fieldtitle>Sex</fieldtitle>
+
+										<fieldname>sex</fieldname>
+
+										<valid>0</valid>
+<value>male|Male</value>
+<value>finmale|Finmale</value>
+</param>
+
+				 					<param>
+
+				 					<type>radio</type>
+
+				 						<fieldtitle>Country</fieldtitle>
+
+										<fieldname>country</fieldname>
+
+										<valid>0</valid>
+<value>1|Yes</value>
+<value>0|No</value>
+</param>
+
+				 					<param>
+
+				 					<type>checkbox</type>
+
+				 						<fieldtitle>Order</fieldtitle>
+
+										<fieldname>order</fieldname>
+
+										<valid>1</valid>
+<value>ship|Ship</value>
+<value>payment|Payment</value>
+</param>
+</elementList>
+	 					</contact>

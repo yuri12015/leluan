@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>ZT Latest News</name>
+	<author>Zootemplate</author>
+	<creationDate>1/2011</creationDate>
+	<copyright>Copyright (c) 2008 - 2011 Zootemplate. All rights reserved.</copyright>
+	<license>Zootemplate</license>
+	<authorEmail>info@Zootemplate.com</authorEmail>
+	<authorUrl>www.Zootemplate.com</authorUrl>
+	<version>1.6.0</version>
+	<description>ZT Latest News</description>
+	<files>
+		<filename module="mod_zt_latestnews">mod_zt_latestnews.php</filename>
+		<filename>helper.php</filename>
+		<filename>thumbnail.inc.php</filename>
+		<filename>index.html</filename>
+		<folder>assets/</folder>
+		<folder>tmpl/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">	
+				<field name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+				<field name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+					<option value="c_dsc">Recently Added First</option>
+					<option value="m_dsc">Recently Modified First</option>
+				</field> 
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+					<option value="1">show</option>
+					<option value="0">hide</option>
+				</field> 
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="false"
+					size="10"
+					label="JCATEGORY"
+					description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />
+				<field name="columns" type="text" default="3" label="Columns" description="Column" />
+				<field name="thumb" type="radio" default="1" label="Thumb Image" description="Thumb Image">
+					<option value="0">hide</option>
+					<option value="1">show</option>
+				</field>
+				<field name="thumbsize" type="text" default="100" label="Thumb Size" description="Thumb Size" />
+				<field name="showtitle" type="radio" default="1" label="Show Title" description="Show Title">
+					<option value="0">hide</option>
+					<option value="1">show</option>
+				</field>
+				<field name="showintro" type="radio" default="1" label="Introtext" description="Show introtext">
+					<option value="0">hide</option>
+					<option value="1">show</option>
+				</field>
+				<field name="intro_lenght" type="text" default="200" label="Intro Lenght" description="Intro Lenght" />
+				<field name="showdate" type="radio" default="1" label="Show date" description="Showdate">
+					<option value="0">hide</option>
+					<option value="1">show</option>
+				</field>
+				<field name="readmore" type="radio" default="1" label="Readmore" description="Readmore">
+					<option value="0">hide</option>
+					<option value="1">show</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			</fieldset> 
+		</fields>
+	</config>
+</extension>

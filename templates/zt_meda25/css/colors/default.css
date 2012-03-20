@@ -1,0 +1,179 @@
+/**
+* @version 1.5.x
+* @package ZooTemplate Project
+* @email webmaster@zootemplate.com
+* @copyright (C) 2011 http://www.ZooTemplate.com. All rights reserved.
+*/
+a {
+    color: #D7391F;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #D7391F;
+}	
+#zt-logo{
+	background:url('../../images/logo.png') no-repeat left top;
+}
+#zt-header {
+  background:#dcdcdc  url("../../images/bg-header.png") repeat-x left bottom;
+}
+.button {
+  background:#EB5926;
+  border: 1px solid #D7391F;
+}
+#zt-footer-menu li a {
+  color: #E7511D;
+}
+#zt-userwrap5-inner .button {
+  background:#E7511D !important;
+  border: 1px solid #F66C3C !important;
+}
+ul#mainlevel li a:hover,
+ul.menu li a:hover {
+	color:#D7391F;
+	text-decoration:none;
+	background:url('../../images/arrow-hover.png') no-repeat left 50%;
+}
+.rtl ul#mainlevel li a:hover,
+.rtl ul.menu li a:hover {
+	background:url('../../images/arrow-hover.png') no-repeat right 50%;
+}
+
+#zt-userwrap5-inner ul li a:hover{
+		color:#D7391F;
+}
+
+ul.menu2 li a:hover {
+  background: url("../../images/arrow-hover.png") no-repeat scroll left 50%;
+}
+
+.rtl ul.menu2 li a:hover {
+  background: url("../../images/arrow-hover.png") no-repeat scroll right 50%;
+}
+
+a.readon2 {
+  background: url("../../images/readon2.png") no-repeat left top;
+}
+a.readon2 span {
+  background: url("../../images/readon2.png") no-repeat right -46px;
+}
+.readon3 {
+  background: url("../../images/bg-readmore2.png") no-repeat right 50%;
+  color: #D7391F;
+}
+
+
+#zt-col3 div.latestnewsitems h4 a:hover {
+  color: #2D2D2D;
+}
+#zt-slideshow-inner .handles .active {
+  background: url("../../images/handles-active.png") no-repeat left top;
+}
+a.readon {
+  background: url("../../images/readon.png") no-repeat left top;
+}
+a.readon span {
+  background: url("../../images/readon.png") no-repeat right -46px;
+}
+/*menu*/
+#menusys_mega li:hover a,
+#menusys_mega li:active a,
+#menusys_mega li:focus a,
+#menusys_mega li a.active,
+#menusys_mega li a.active:hover,
+#menusys_mega li a.active:active,
+#menusys_mega li a.active:focus {
+	color: #ffffff;
+	position:relative;
+	z-index:10;
+	background:url('../../images/bg-menu-active.png') no-repeat left 0;
+}
+#menusys_mega li:hover a .menu-title,
+#menusys_mega li:active a .menu-title,
+#menusys_mega li:focus a .menu-title,
+#menusys_mega li a.active .menu-title,
+#menusys_mega li a.active:hover .menu-title,
+#menusys_mega li a.active:active .menu-title,
+#menusys_mega li a.active:focus .menu-title {
+	color: #ffffff;
+	position:relative;
+	z-index:15;
+	background:url('../../images/bg-menu-active.png') no-repeat right -46px;
+}
+
+#menusys_mega .subarrowtop {
+  background: url("../../images/megamenu/arrow.png") no-repeat left top;
+}
+#menusys_mega .subwraptop {
+  background: url("../../images/megamenu/top-center.png") repeat-x left top;
+}
+#menusys_mega .subwraptop .subwraptop-left {
+  background: url("../../images/megamenu/top-left.png") no-repeat left top;
+}
+#menusys_mega .subwraptop .subwraptop-right {
+  background: url("../../images/megamenu/top-right.png") no-repeat right top;
+}
+
+#menusys_mega .subwrapcenter {
+  background: url("../../images/megamenu/mid-center.png") repeat-x left top #E1471D;
+}
+#menusys_mega .subwrapbottom .subwrapbottom-left {
+  background: url("../../images/megamenu/bot-left.png") no-repeat left top;
+}
+#menusys_mega .subwrapbottom .subwrapbottom-right {
+    background: url("../../images/megamenu/bot-right.png") no-repeat right top;
+}
+#menusys_mega .subwrapbottom {
+    background: url("../../images/megamenu/bot-center.png") repeat-x left top;
+}
+#menusys_mega .megacol ul li {
+  background: url("../../images/megamenu/bg-list-button.png") repeat-x left bottom;
+}
+#menusys_mega .mega-group .no-image{ 
+	background: url("../../images/megamenu/bg-list-button.png") repeat-x left bottom; 
+}
+#menusys_mega .megacol ul li a span.no-image {
+  background: url("../../images/megamenu/arrow2.png") no-repeat 0 50%;
+}
+#menusys_mega .megacol ul li a:hover span.no-image, 
+#menusys_mega .megacol ul li a:active span.no-image, 
+#menusys_mega .megacol ul li a:focus span.no-image, 
+#menusys_mega .megacol ul li a.active span.no-image, 
+#menusys_mega .megacol ul li a.active:hover span.no-image, 
+#menusys_mega .megacol ul li a.active:active span.no-image, 
+#menusys_mega .megacol ul li a.active:focus span.no-image {
+  background: url("../../images/megamenu/arrow2-hover.png") no-repeat left 50%;
+}
+#menusys_mega div.items .item {
+  background: url("../../images/megamenu/bg-list-button.png") repeat-x left bottom;
+}
+#menusys_mega div.items .item:hover {
+  background: url("../../images/megamenu/bg-list-button.png") repeat-x left bottom #E2532C;
+}
+
+#menusys_mega div.items .item .caption {
+  background:#F0A38E;
+}
+
+/*right to left*/
+.rtl #menusys_mega .megacol ul li a span.no-image {
+  background: url("../../images/megamenu/arrow2.png") no-repeat right 50%;
+}
+
+.rtl #menusys_mega .megacol ul li a:hover  span.no-image,
+.rtl #menusys_mega .megacol ul  li a:active  span.no-image,
+.rtl #menusys_mega .megacol ul  li a:focus  span.no-image,
+.rtl #menusys_mega .megacol ul  li a.active  span.no-image,
+.rtl #menusys_mega .megacol ul  li a.active:hover  span.no-image,
+.rtl #menusys_mega .megacol ul  li a.active:active  span.no-image,
+.rtl #menusys_mega .megacol ul  li a.active:focus  span.no-image{
+	background:url("../../images/megamenu/arrow2-hover.png") no-repeat right 50%;
+	
+}
+#zt-slideshow-inner .jvcarousel_mtitle {
+  color: #D7391F;
+}
+#zt-col1 .free {
+  background: url("../../images/bg-free.png") no-repeat left top;
+}

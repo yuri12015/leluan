@@ -1,0 +1,89 @@
+<contact version="1" xmlns="http://xspf.org/ns/0/">
+	 						<elementList>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Name</fieldtitle>
+
+						 								<fieldname>name</fieldname>
+
+						 								<valid>1</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Email</fieldtitle>
+
+						 								<fieldname>email</fieldname>
+
+						 								<valid>1</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>textfield</type>
+<fieldtitle>Address</fieldtitle>
+
+						 								<fieldname>address</fieldname>
+
+						 								<valid>0</valid>
+<size>30</size>
+
+						 								<length>30</length>
+</param>
+<param>
+
+						 								<type>textarea</type>
+<fieldtitle>Message</fieldtitle>
+
+						 								<fieldname>message</fieldname>
+
+						 								<valid>0</valid>
+<cols>30</cols>
+
+					 					        		<rows>5</rows>
+</param>
+<param>
+
+						 								<type>selected</type>
+<fieldtitle>Templates</fieldtitle>
+
+						 								<fieldname>template</fieldname>
+
+						 								<valid>1</valid>
+<size>30</size>
+
+						 					  			<size>0</size>
+<value>jv_guan|JV Guan</value>
+<value>jv_lago|JV Lago</value>
+<value>jv_piat|JV Piat</value>
+</param>
+<param>
+
+						 								<type>radio</type>
+<fieldtitle>Choose Plugin</fieldtitle>
+
+						 								<fieldname>plugin</fieldname>
+
+						 								<valid>1</valid>
+<value>plugin_slideshow|Plugin Slideshow</value>
+<value>plugin_lightbox|Plugin Lightbox</value>
+</param>
+<param>
+
+						 								<type>checkbox</type>
+<fieldtitle>Choose Module</fieldtitle>
+
+						 								<fieldname>module</fieldname>
+
+						 								<valid>1</valid>
+<value>mod_jv_contact_pro|JV Contact Pro</value>
+<value>mod_jv_sobi2search| JV Sobi2 Search</value>
+</param>
+</elementList>
+	 					</contact>

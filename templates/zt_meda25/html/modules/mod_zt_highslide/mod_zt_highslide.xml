@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Zt Highslide</name>
+	<author>ZooTemplate</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>ZooTemplate.Com</copyright>
+	<authorEmail>support@ZooTemplate.com</authorEmail>
+	<authorUrl>www.ZooTemplate.com</authorUrl>
+	<version>1.6.0</version>
+	<description>MOD_ZT_HIGHSLIDE_MOD_DESC</description>
+	<languages>
+			<language tag="en-GB">en-GB.mod_zt_highslide.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_zt_highslide">mod_zt_highslide.php</filename>
+		<filename module="mod_zt_highslide">helper.php</filename>
+		<filename module="mod_zt_highslide">index.html</filename>
+		<filename module="mod_zt_highslide">tmpl/default.php</filename>
+		<filename module="mod_zt_highslide">tmpl/index.html</filename>
+		<filename module="mod_zt_highslide">fields/hstypelist.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldpath="/modules/mod_zt_highslide/fields">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+				<field name="type" type="hstypelist" default="" label="Type" description="MOD_ZT_HIGHSLIDE_TYPE_DESC">
+					<option value="">- Select type -</option>
+					<option value="url-img">Image</option>
+					<option value="url-flash">Flash</option>	
+					<option value="html">Html</option>
+					<option value="url-slideshow-caption">Slideshow caption</option>
+					<option value="url-gallery">Gallery</option>
+					<option value="url-iframe">Frame</option>
+					<option value="modules">Modules</option>
+				</field>		
+				<field name="url-url"  type="textarea" cols="40" rows="2" default="" label="Src" description="MOD_ZT_HIGHSLIDE_SRC_DESC" />		
+				<field name="url-folder"  type="text" default="" size="60" label="Caption Slideshow /Gallery images folder" description="Used for caption slideshow or gallery only and when box Src is empty!" />		
+				<field name="url-interval" type="list" default="3000" label="Gallery interval" description="Time delay for each image in gallery playing.">
+					<option value="1000">1 sec </option>
+					<option value="2000">2 secs </option>
+					<option value="3000">3 secs </option>
+					<option value="4000">4 secs </option>
+					<option value="5000">5 secs </option>
+				</field>	
+				<field name="url-repeat" type="radio" default="1" label="Repeat gallery playing" description="Repeat gallery playing or not">
+					<option value="1">Repeat</option>
+					<option value="0">No-repeat</option>
+				</field>	
+				
+				<field name="modules-position" type="text" default="" label="Position" description="MOD_ZT_HIGHSLIDE_POSITION_DESC"/>				 
+				<field name="html-htmlcontentid" type="text" default="" label="HtmlContentId" description="Id of the div contains html content"/>				 
+				<field name="html-content" filter="safehtml" type="textarea" cols="40" rows="5" default="" label="HtmlContent" description="MOD_ZT_HIGHSLIDE_CONTENT_DESC"/>
+				<field name="outlineType" type="list" default="rounded-white" label="Outline Type" description="Choose the Outline Type">
+					<option value="rounded-black">Rounded-black</option>
+					<option value="glossy-dark">Glossy-dark</option>
+					<option value="beveled">Beveled</option>
+					<option value="drop-shadow">Drop-shadow</option>
+					<option value="rounded-white">Rounded-white</option>
+					<option value="outer-glow">Outer-glow</option>
+					<option value="">No Border</option>
+				</field>
+				<field name="popupPos" type="list" default="center" label="Pop-up Position" description="Choose Pop-up position">
+					<option value="auto">Auto</option>
+					<option value="center">Center</option>
+				</field>
+				<field name="dimmingOpac" type="text" size="10" default="0.5" label="Dimming Opacity" description="Dimming opacity for non-popup area." />		
+			</fieldset>
+			
+			<fieldset name="advanced">	
+				<field name="Height" type="text" default="200" label="Height" description="MOD_ZT_HIGHSLIDE_HEIGHT_DESC" />
+				<field name="Width" type="text" default="200" label="Width" description="MOD_ZT_HIGHSLIDE_WIDTH_DESC" />
+				<field name="class" type="text" default="" label="Class" description="MOD_ZT_HIGHSLIDE_CLASS_DESC" />
+				<field name="captionText" type="text" default="" label="Caption Text" description="MOD_ZT_HIGHSLIDE_CAPTION_TEXT_DESC" />		
+				<field name="centr-content" type="textarea" cols="40" rows="2" default="ZT Highslide" label="Highslide text link" description="MOD_ZT_HIGHSLIDE_HIGHSLIDE_CONTENT_DESC" />
+			</fieldset>		
+		</fields>
+	</config>
+</extension>
