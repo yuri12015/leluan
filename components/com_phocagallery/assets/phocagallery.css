@@ -15,7 +15,9 @@
 	margin: 10px 0 10px 0;
 }
 #phocagallery .category {
-	margin: 5px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 18px;
 }
 #phocagallery.pg-detail-view {
 	margin:0px;
