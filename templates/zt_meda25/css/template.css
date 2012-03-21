@@ -301,7 +301,7 @@ div.module_text {
 	background:url('../images/bg-col1-right.png') top left no-repeat;
 }
 #zt-col1 .info{
-	width:55%;
+	width:50%;
 	float:left;	
 	font-size:140%;
 	color:#232323;
@@ -315,7 +315,7 @@ div.module_text {
 	text-decoration:underline;
 }
 #zt-col1 .link{
-	width:40%;
+	width:45%;
 	float:right;
 }
 
