@@ -14,7 +14,7 @@ html, body, form, fieldset {
 }
 body {
 	line-height: 20px;
-	font-family: Arial;
+	font-family: Tahoma;
 	color: #1e1e1e;
 	background:url('../images/bg-body.png') repeat left top;
 }
