@@ -400,7 +400,7 @@ abstract class JString
 			{
 				$locale = $locale0;
 			}
-
+			
 			// See if we have successfully set locale to UTF-8
 			if (!stristr($locale, 'UTF-8') && stristr($locale, '_') && preg_match('~\.(\d+)$~', $locale, $m))
 			{

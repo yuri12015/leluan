@@ -1170,7 +1170,7 @@ class JLanguage extends JObject
 		{
 			$result = self::parseXMLLanguageFile("$path/$file");
 		}
-
+		
 		return $result;
 	}
 
@@ -1255,7 +1255,7 @@ class JLanguage extends JObject
 				$this->locale = false;
 			}
 		}
-
+		
 		return $this->locale;
 	}
 
