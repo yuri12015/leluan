@@ -28,15 +28,15 @@ class JConfig {
 	public $ftp_pass = '';
 	public $ftp_root = '';
 	public $ftp_enable = '0';
-	public $offset = 'UTC';
+	public $offset = 'Asia/Bangkok';
 	public $offset_user = 'UTC';
 	public $mailer = 'mail';
 	public $mailfrom = 'luckymonkey33272000@gmail.com';
 	public $fromname = 'Le Luan';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
-	public $smtpuser = '';
-	public $smtppass = '';
+	public $smtpuser = 'hoanglong102000';
+	public $smtppass = '12345';
 	public $smtphost = 'localhost';
 	public $smtpsecure = 'none';
 	public $smtpport = '25';
@@ -58,7 +58,7 @@ class JConfig {
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = '';
-	public $sitename_pagetitles = '0';
+	public $sitename_pagetitles = '1';
 	public $force_ssl = '0';
 	public $feed_email = 'author';
 	public $cookie_domain = '';

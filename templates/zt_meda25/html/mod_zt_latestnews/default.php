@@ -1,4 +1,4 @@
-<?php // no direct access
+﻿<?php // no direct access
 defined('_JEXEC') or die('Restricted access'); 
 $i = 0;
 $count_list = count($list);
@@ -20,7 +20,7 @@ $count_list = count($list);
 			<?php if($params->get('showdate')==1) : ?>
 			<span class="latestnewsdate"><?php echo $item->date; ?></span>
 			<?php endif; ?>
-			<?php if($params->get('readmore')==1) : ?><p class="des"><a href="<?php echo $item->link; ?>" class="readon3"><?php echo JText::sprintf('Read more'); ?></a></p><?php endif; ?>
+			<?php if($params->get('readmore')==1) : ?><p class="des"><a href="<?php echo $item->link; ?>" class="readon3"><?php echo JText::sprintf('Xem tiếp...'); ?></a></p><?php endif; ?>
 		</div>
 	</div>
 <?php endforeach; ?>

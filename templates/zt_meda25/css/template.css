@@ -14,7 +14,7 @@ html, body, form, fieldset {
 }
 body {
 	line-height: 20px;
-	font-family: Tahoma;
+	font-family: Arial;
 	color: #1e1e1e;
 	background:url('../images/bg-body.png') repeat left top;
 }
@@ -213,6 +213,8 @@ div.module_text {
 #zt-container{	
 	padding:0 10px;
 	overflow: hidden;
+	float: left;
+	margin-bottom: 20px;
 }
 #zt-container-full{	
 	padding:20px 0;
@@ -258,6 +260,7 @@ div.module_text {
 	float:left;
 	margin:20px 0px;
 	position:relative;
+	width: 100%;
 }
 
 #bid {position: absolute; top: 0px; left: -4900px;}
@@ -508,11 +511,11 @@ h3.moduletitle{
 	float:left;
 }
 #zt-copyright{
-	width:60%;
+	width:50%;
 	float:left;
 }
 #zt-footer-menu{
-	width:40%;
+	width:50%;
 	float:right;
 	line-height:20px;
 }
@@ -547,3 +550,7 @@ h3.moduletitle{
 #zt-color-inner img{
 	cursor:pointer;
 }
+/*Custom added*/
+.joomla_add_this { border-top: solid 1px #CCC; padding-top: 10px; margin-top: 20px; }
+.home p { text-align: justify; }
+.item-page { text-align: justify; }

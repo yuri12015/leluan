@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /**
  * @package ZT Headline module for Joomla! 1.7
  * @author http://www.zootemplate.com
@@ -67,7 +67,7 @@ $enableLink = $params->get('link_limage');
 								echo "<p class=\"des\">".$item->introtext."</p>";
 							 ?>
 							<?php if($showReadmore) { ?>
-							<p><a class="readon" title="" href="<?php echo $item->link;?>"><span><?php echo JText::_('Read more'); ?></span></a></p>	  
+							<p><a class="readon" title="" href="<?php echo $item->link;?>"><span><?php echo JText::_('Xem thêm'); ?></span></a></p>	  
 							<?php } ?>
 						</div>
 						<?php if($item->thumbs) { ?>

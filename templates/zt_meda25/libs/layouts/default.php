@@ -162,26 +162,31 @@
 							<a href="javascript:void();" id="ztbacktotop"><span>Back To Top</span></a>
 							<!-- CONTAINER -->
 							<div id="zt-container<?php echo $zt_width; ?>" class="clearfix">
-								
+									<!--start content-->
 									<div id="zt-content">
 										<div id="zt-component" class="clearfix">
 											<jdoc:include type="message" />
 											<jdoc:include type="component" />
 										</div>
 									</div>
+									<!--end content-->
 									<?php   if($this->countModules('left')) : ?>
+									<!--start left-->
 									<div id="zt-left">
 										<div id="zt-left-inner">
 											<jdoc:include type="modules" name="left" style="ztxhtml" />
 										</div>
 									</div>
+									<!--end left-->
 									<?php endif; ?>
 									<?php   if($this->countModules('right')) : ?>
+									<!--start right-->
 									<div id="zt-right">
 										<div id="zt-right-inner">
 											<jdoc:include type="modules" name="right" style="ztxhtml" />
 										</div>
 									</div>
+									<!--end right-->
 									<?php endif; ?>
 							</div>
 							<!-- END CONTAINER -->	

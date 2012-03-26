@@ -26,7 +26,8 @@ JHtml::core();
 	<h2 class="contentheading">
 		<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
 			<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
-			<?php echo $this->escape($this->item->title); ?></a>
+				<?php echo $this->escape($this->item->title); ?>
+			</a>
 		<?php else : ?>
 			<?php echo $this->escape($this->item->title); ?>
 		<?php endif; ?>
@@ -127,7 +128,7 @@ JHtml::core();
  	</dl>
 <?php endif; ?>
 
-</div>
+<!--here-->
 <?php endif; ?>
 
 <?php echo $this->item->introtext; ?>
@@ -145,7 +146,7 @@ JHtml::core();
 		$link->setVar('return', base64_encode($returnURL));
 	endif;
 ?>
-		<p class="readmore">
+	<p class="readmore">
 				<a href="<?php echo $link; ?>" class="readon3"><span>
 					<?php if (!$params->get('access-view')) :
 						echo JText::_('COM_CONTENT_REGISTER_TO_READ_MORE');
@@ -162,7 +163,7 @@ JHtml::core();
 <?php endif; ?>
 
 <?php if ($this->item->state == 0) : ?>
-</div>
+</div> <!--here-->
 <?php endif; ?>
 
 <div class="item-separator"></div>
