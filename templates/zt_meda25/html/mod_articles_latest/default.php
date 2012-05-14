@@ -12,7 +12,9 @@ defined('_JEXEC') or die;
 ?>
 <div style="display: block;" class="<?php echo $params->get('moduleclass_sfx'); ?>">
 <?php
+$index = 0;
 foreach ($list as $item) :
+	$index += 1;
 	$text = $item->introtext;
 	$thumb = '';
 	preg_match_all('/<img [^>]*>/i', $text, $matches); $matches = $matches[0];
@@ -46,24 +48,6 @@ foreach ($list as $item) :
 		$matches[0] = "<div style=\"float: left;border:solid 1px #CCCCCC;display:inline-block;". $margin .$shadow."\">" . $matches[0] . "</div>";
 		$thumb = $matches[0];
 	}
-	if (strlen(strip_tags($text)) > 80) {
-		// First, remove all new lines
-		$text = preg_replace("/\r\n|\r|\n/", "", $text);
-		// Next, replace <br /> tags with \n
-		$text = preg_replace("/<BR[^>]*>/i", "\n", $text);
-		// Replace <p> tags with \n\n
-		$text = preg_replace("/<P[^>]*>/i", "\n\n", $text);
-		// Strip all tags
-		$text = strip_tags($text);
-		// Truncate
-		$text = substr($text, 0, 80);
-		// Pop off the last word in case it got cut in the middle
-		$text = preg_replace("/[.,!?:;]? [^ ]*$/", "", $text);
-		// Add ... to the end of the article.
-		$text = trim($text) . "...";
-		// Replace \n with <br />
-		$text = str_replace("\n", "<br />", $text);
-	}
 ?>
 	<?php if ($index == ((int) $params->get('count', 5)))
 		echo "<div>";
@@ -72,9 +56,9 @@ foreach ($list as $item) :
 	?>
 		<div style="display: block; margin: 8px 0 8px 0; text-align: justify;">
 			<a href="<?php echo $item->link; ?>"><?php echo $thumb; ?></a>
-			<p style="margin: 0px;"><a href="<?php echo $item->link; ?>">
-				<?php echo $item->title; ?>
-			</a></p>
+			<div style="margin: 0px;">
+				<a href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
+			</div>
 		</div>
 	</div>
 <?php endforeach; ?>
