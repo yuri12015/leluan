@@ -124,7 +124,7 @@ div.module_text {
 #zt-mainmenu{
 	width:100%;
 	float:left;
-	margin: 5px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 /*slideshow*/
@@ -556,3 +556,5 @@ h3.moduletitle{
 .item-page { text-align: justify; }
 
 .moduletable.diachi { color: White; }
+
+.items-row { border-top: solid 3px #CCC; padding-top: 20px; }

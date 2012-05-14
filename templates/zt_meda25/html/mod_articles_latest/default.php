@@ -44,22 +44,22 @@ foreach ($list as $item) :
 		$matches[0] = preg_replace('@/?>$@', 'style="border:2px solid White;" />', $matches[0]);
 		$matches[0] = preg_replace('@/?>$@', 'src="' . $imgsrc . '" />', $matches[0]);
 		$margin = "margin-right: 8px;";
-		$shadow = "box-shadow: 2px 2px 2px #363636;-moz-box-shadow: 2px 2px 2px #CCCCCC;-webkit-box-shadow: 2px 2px 2px #CCCCCC;";
-		$matches[0] = "<div style=\"float: left;border:solid 1px #CCCCCC;display:inline-block;". $margin .$shadow."\">" . $matches[0] . "</div>";
+		$shadow = "box-shadow: 2px 2px 2px #363636;-moz-box-shadow: 2px 2px 2px #363636;-webkit-box-shadow: 2px 2px 2px #363636;";
+		$matches[0] = "<div style=\"float: left; border: solid 1px #CCCCCC; display: inline-block; " . $margin . $shadow . "\">" . $matches[0] . "</div>";
 		$thumb = $matches[0];
 	}
 ?>
 	<?php if ($index == ((int) $params->get('count', 5)))
-		echo "<div>";
+		echo '<div style="width: 300px; display: inline-block; padding: 5px 0;">';
 	else
-		echo '<div style="border-bottom: 1px dotted #bfbfbf;">';
+		echo '<div style="border-bottom: 1px dotted #bfbfbf; width: 300px; display: inline-block; padding: 5px 0;">';
 	?>
-		<div style="display: block; margin: 8px 0 8px 0; text-align: justify;">
-			<a href="<?php echo $item->link; ?>"><?php echo $thumb; ?></a>
-			<div style="margin: 0px;">
-				<a href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
-			</div>
+		
+		<a href="<?php echo $item->link; ?>" style="display: inline-block; float: left;"><?php echo $thumb; ?></a>
+		<div style="margin: 0px; float: left;">
+			<a href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
 		</div>
+
 	</div>
 <?php endforeach; ?>
 </div>
