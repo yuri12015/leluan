@@ -10,10 +10,48 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
-<ul class="<?php echo $params->get('moduleclass_sfx'); ?>">
-<?php foreach ($list as $item) :  ?>
-	<li>
-		<a href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
-	</li>
+<div style="display: block;" class="<?php echo $params->get('moduleclass_sfx'); ?>">
+<?php
+$index = 0;
+foreach ($list as $item) :
+	$index += 1;
+	$text = $item->introtext;
+	$thumb = '';
+	preg_match_all('/<img [^>]*>/i', $text, $matches); $matches = $matches[0];
+	if (isset($matches[0])) {
+		// Remove style, class, width, border, and height attributes.
+		$matches[0] = preg_replace('/(style|class|width|height|border) ?= ?[\'"][^\'"]*[\'"]/i', '', $matches[0]);
+		//get current src
+		preg_match_all('/(src) ?= ?[\'"][^\'"]*[\'"]/i', $matches[0], $getsrc_s);
+		$getsrc_s = $getsrc_s[0];
+		$getsrc = $getsrc_s[0];
+		//split put src value
+		//echo htmlspecialchars(print_r($getsrc_s, 1));
+		$imgsrc = substr($getsrc, 4);
+		//remove single quote or double quote
+		$imgsrc = str_replace("'", "", $imgsrc);
+		$imgsrc = str_replace('"', '', $imgsrc);
+		//remove old timthumb
+		$imgsrc = str_replace('timthumb.php?src=', '', $imgsrc);
+		$imgsrc = preg_replace('/([?&]zc)=[^&]*/', '', $imgsrc);
+		$imgsrc = preg_replace('/([?&]q)=[^&]*/', '', $imgsrc);
+		$imgsrc = preg_replace('/([?&]w)=[^&]*/', '', $imgsrc);
+		$imgsrc = preg_replace('/([?&]h)=[^&]*/', '', $imgsrc);
+		//add new timthumb
+		$imgsrc = JURI::root() . "timthumb.php?src=" . $imgsrc . "&zc=1&q=90&w=50&h=50";
+		$matches[0] = preg_replace('/(src) ?= ?[\'"][^\'"]*[\'"]/i', '', $matches[0]);
+		//add new src
+		$matches[0] = preg_replace('@/?>$@', 'style="border:2px solid White; float: left; margin-right: 5px;" />', $matches[0]);
+		$matches[0] = preg_replace('@/?>$@', 'src="' . $imgsrc . '" />', $matches[0]);
+		//$margin = "margin-right: 8px;";
+		//$shadow = "box-shadow: 2px 2px 2px #363636;-moz-box-shadow: 2px 2px 2px #CCCCCC;-webkit-box-shadow: 2px 2px 2px #CCCCCC;";
+		//$matches[0] = "<div style=\"float: left;border:solid 1px #CCCCCC;display:inline-block;". $margin .$shadow."\">" . $matches[0] . "</div>";
+		$thumb = $matches[0];
+	}
+?>
+	<p style="display: inline-block; clear: both; padding: 5px; margin-top: 5px; width: 100%; background: url(templates/zt_meda25/images/colors/green/megamenu/bg-list-button.png) repeat-x left bottom;">
+		<?php echo $thumb; ?>
+		<a href="<?php echo $item->link; ?>" style="line-height: 135%;"><?php echo $item->title; ?></a>
+	</p>
 <?php endforeach; ?>
-</ul>
+</div>
