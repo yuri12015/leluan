@@ -95,7 +95,7 @@ class modZTLatestNewsHelper
 			$imageurl = modZTLatestNewsHelper::checkImage($row->introtext);
 			$lists[$i]->title = htmlspecialchars( $row->title ); 
 			$lists[$i]->link = JRoute::_(ContentHelperRoute::getArticleRoute($row->slug, $row->catslug)); 
-			 
+			
 			if(modZTLatestNewsHelper::FileExists($imageurl)) {
 				$lists[$i]->thumb = modZTLatestNewsHelper::getThumb($row->introtext,$thumbWidth,$thumbHeight,false);
 				$images_size = modZTLatestNewsHelper::getImageSizes($lists[$i]->thumb);
@@ -103,6 +103,10 @@ class modZTLatestNewsHelper
 					@unlink($lists[$i]->thumb);
 					$lists[$i]->thumb_small = modZTLatestNewsHelper::getThumb($row->introtext,$thumbWidth,$thumbHeight,false);
 				}			
+			}
+			//hack timthumb
+			else {
+				$lists[$i]->thumb = modZTLatestNewsHelper::getThumb($row->introtext,$thumbWidth,$thumbHeight,false);
 			}
 			$lists[$i]->introtext = modZTLatestNewsHelper::introContent($row->introtext, $intro_lenght);
 			$lists[$i]->date = date("d F Y",strtotime($row->created));
@@ -161,7 +165,9 @@ class modZTLatestNewsHelper
 			//is remote and we don't support thumbs for external images
 			if (strpos($image_path,'http://') !== false ||
 			strpos($image_path,'https://') !== false) {
-				return false;
+				//return false;
+				$result = JURI::root() . 'timthumb.php?src=' . $image_path . '&zc=1&q=90&w=' . $tWidth . '&h=' . $tHeight;
+				return ($result);
 			}
 			// create a thumb filename
 			$file_name = strrpos($image_path,'/');
