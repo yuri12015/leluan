@@ -208,7 +208,7 @@ div.module_text {
 }
 #zt-container-right #zt-content,
 #zt-container-left #zt-content{
-	width:78%;
+	width:70%;
 }
 #zt-container{	
 	padding:0 10px;
@@ -221,10 +221,10 @@ div.module_text {
 	overflow: hidden;
 }
 #zt-left{
-	width:22%;
+	width:30%;
 }
 #zt-right{
-	width:22%;
+	width:30%;
 }
 #zt-right-inner,
 #zt-left-inner{
